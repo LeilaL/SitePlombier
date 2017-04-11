@@ -4,17 +4,14 @@ body {
 }
 
   /*Header*/
-  img{
-  display: inline-block;
-  }
 
-  h1{
+h1 {
   text-align: center;
   display: inline-block;
   color: orange;
   font-style: italic;
   position: absolute;
-  }
+}
 
 /*Main*/
 article {
@@ -23,7 +20,7 @@ article {
   margin-top: 50px;
 }
 
-article img{
+article img {
   height: 250px;
   width: 300px;
   display: inline-block;
@@ -50,14 +47,65 @@ figure {
 }
 
 
-}
+
 /*Taille Smartphones*/
-@media screen and (max-width: 767px){
- header img{
-   width: 20%;
+@media (max-width: 767px){
+ header > a > img{
+   display: none;
  }
 
+ header form input {
+   display: none;
+ }
 
+h1 {
+  margin-left: 40px;
+}
+
+nav {
+  display: none;
+}
+
+figure > img > figcaption {
+  display: inline-block;
+}
+
+.fa {
+  float: right;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+footer{
+  border-top: 2px solid grey;
+  box-shadow: 2px 2px 5px grey;
+  text-align: center;
+}
+
+footer div {
+  border: 3px solid #FD6801;
+  width: 150px;
+  height: 120px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+#first {
+  position: relative;
+  top: -37px;
+}
+
+#second {
+  position: relative;
+  margin-top: 45px;
+}
+
+div:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
 
 }
 
@@ -76,10 +124,18 @@ h1{
   margin-top: 80px;
 }
 
-  header {
+header {
   border-bottom: 2px solid grey;
   box-shadow: 2px 2px 2px grey;
   height: 245px;
+}
+
+i {
+  display: none!important;
+}
+
+img{
+  display: inline-block;
 }
 
   /* MENU DEROULANT HEADER*/
@@ -89,6 +145,7 @@ nav {
   display: inline-block;
   font-family: Arial, sans-serif;
   position: relative;
+  font-weight: bold;
 }
 
 nav ul li {
@@ -137,7 +194,7 @@ form{
   margin-top: 80px;
 }
 
-input[type=text] {
+header input[type=text] {
   width: 200px;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -156,14 +213,29 @@ input[type=text] {
 footer{
   border-top: 2px solid grey;
   box-shadow: 2px 2px 5px grey;
+  text-align: center;
 }
 
 footer div {
   display: inline-block;
-  border: 2px solid grey;
+  border: 3px solid #FD6801;
   width: 250px;
   text-align: center;
-  right: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+div:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+#first {
+   margin-right: 30px
+}
+
+#third {
+  margin-left: 30px;
 }
 
 }
