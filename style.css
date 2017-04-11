@@ -1,0 +1,169 @@
+/*Propriétées Générales*/
+body {
+    margin: 0;
+}
+
+  /*Header*/
+  img{
+  display: inline-block;
+  }
+
+  h1{
+  text-align: center;
+  display: inline-block;
+  color: orange;
+  font-style: italic;
+  position: absolute;
+  }
+
+/*Main*/
+article {
+  width: 95%;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+article img{
+  height: 250px;
+  width: 300px;
+  display: inline-block;
+  float: left;
+  margin: 25px;
+}
+
+article h2 p {
+  display: inline-block;
+  text-align: justify;
+}
+
+figcaption {
+  display: block;
+  width: 150px;
+}
+
+figure {
+  display: inline-block;
+}
+
+#two img {
+  width: 185px;
+}
+
+
+}
+/*Taille Smartphones*/
+@media screen and (max-width: 767px){
+ header img{
+   width: 20%;
+ }
+
+
+
+}
+
+
+/*Taille Tablet*/
+@media screen and (min-width: 768px){
+
+}
+
+
+/*Taille Desktop*/
+@media screen and (min-width: 1281px){
+h1{
+  font-size: 70px;
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
+  header {
+  border-bottom: 2px solid grey;
+  box-shadow: 2px 2px 2px grey;
+  height: 245px;
+}
+
+  /* MENU DEROULANT HEADER*/
+nav {
+  margin-left: 50px;
+  width: 500px;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+nav ul li {
+ display: inline-block;
+}
+
+nav ul {
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  text-align:center;
+  padding:5px;
+  color : #11ADE6;
+}
+
+nav ul ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+nav ul ul li {
+  margin: 8px;
+  width: 200px;
+}
+
+nav li {
+  list-style-type: none;
+  margin-left:2px;
+  position: relative;
+}
+
+nav li:hover ul, li li:hover ul {
+  display: block;
+}
+
+/*Barre de recherche*/
+form{
+  display: inline-block;
+  width: 25%;
+  position: absolute;
+  right: 20px;
+  margin-top: 80px;
+}
+
+input[type=text] {
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png');
+  background-size: 25px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  height: 40px;
+
+}
+
+footer{
+  border-top: 2px solid grey;
+  box-shadow: 2px 2px 5px grey;
+}
+
+footer div {
+  display: inline-block;
+  border: 2px solid grey;
+  width: 250px;
+  text-align: center;
+  right: 300px;
+}
+
+}
