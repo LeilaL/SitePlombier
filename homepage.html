@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css"/>
     <title>Bibi&amp;Co</title>
     <link rel="icon" type="image/png" href="data:image/png;base64,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" />
@@ -12,6 +13,7 @@
     <header>
         <a href="homepage.html"><img src="https://t4.ftcdn.net/jpg/01/06/99/35/240_F_106993526_W01mxdaID4Vmx8PzNBzm9UjpjMxnUujq.jpg" alt="logo plombier"></a>
         <h1>Plomberie</h1>
+        <i class="fa fa-align-justify" aria-hidden="true"></i>
         <form>
          <input type="text" name="search" placeholder="Search..">
         </form>
@@ -48,7 +50,7 @@
         </p>
     </article>
 
-    <article class="">
+    <article id="two">
       <figure>
         <img src="http://plombier-du-nord.fr/wp-content/themes/theme47996/images/iconSweets/icon1.png" alt="img robinet">
         <figcaption>Installation et Entretien<br>Nous sommes spécialistes de l’installation et de l’entretien de chauffe eau.<br>Grâce à notre expérience, nous vous garantissons un travail professionnel et rapide.</figcaption>
@@ -71,18 +73,17 @@
     </article>
 
   <footer>
-    <div class="">
-      <img src=""
+    <div id="first">
       <p>Appelez-nous</p>
       <h4>03 20 59 10 00</h4>
     </div>
 
-    <div class="">
+    <div id="second">
       <p>Nous sommes disponible</p>
        <h4>24/24h et 7/7 jours</h4>
     </div>
 
-    <div class="">
+    <div id="third">
       <p>Envoyez un email</p>
       <a href="mailto:contact@les-bons-artisans-français.fr" title="contacter-nous">Email</a>
     </div>
